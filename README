@@ -5,12 +5,13 @@ You can skip them if you would like to understand the concepts and would like to
 
 Understanding the Visuals:
 
+Spark UI [Spark DAG Visualization](screenshots/pyspark_dag_with_join.png) reveals the execution plan. The nodes in the DAG represent intermediate computation steps. 
+For instance, in this diagram, we have WholeStageCodegen(1) which represents RDD built out of dataset 1 (employee_data) and WholeStageCodegen(1) represents RDD built with 
+the 2nd dataset (demographic_data). Each stage in spark shows the progression of computation on these datasets. 
 
+Constrasting this to the DAG in PyTorch [TensorBoardVisuals](screenshots/TensorBoardVisualizingDAG-pytorch.png), we see a similar structure representing layers of the Neural Network model
 
-
-
-
-Steps:
+Steps to execute the PySpark and PyTorch jobs in order to visualize and explore the WebUI interactively:
 1. python -m pip venv .venv
 2. pip install -r requirements.txt
 3. In Terminal 1 python pyspark_employee_data_processing.py. This code has sleep added to enable users to explore the interactive Spark UI. The UI will be active at http://localhost:4040/jobs/
