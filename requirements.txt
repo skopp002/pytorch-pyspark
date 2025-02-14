@@ -5,3 +5,4 @@ pyspark
 tensorboard
 matplotlib
 scikit-learn
+torch-tb-profiler

@@ -18,6 +18,7 @@ Steps:
 5. Launch Tensorboard to visualize the model - 
 tensorboard --logdir="./" 
 This will launch Tensorboard at http://localhost:6006/
+You can optionally use  torch-tb-profiler which allows for Visual Studion built in tensorboard
 
 
 
