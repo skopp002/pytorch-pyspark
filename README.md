@@ -3,15 +3,17 @@ This project demonstrates the similarities between 2 popular frameworks - PySpar
 Below steps are to enable you to try the jobs and use the interactive visualization aspects yourself. 
 You can skip them if you would like to understand the concepts and would like to view the results through screenshots
 
-Understanding the Visuals:
-
-![Spark DAG Visualization](screenshots/pyspark_dag_with_join.png) The above Spark UI reveals the execution plan. The nodes in the DAG represent intermediate computation steps. 
+## Understanding the Visuals:
+### The below Spark UI reveals the execution plan.
+![Spark DAG Visualization](screenshots/pyspark_dag_with_join.png) 
+ The nodes in the DAG represent intermediate computation steps. 
 For instance, in this diagram, we have WholeStageCodegen(1) which represents RDD built out of dataset 1 (employee_data) and WholeStageCodegen(1) represents RDD built with 
 the 2nd dataset (demographic_data). Each stage in spark shows the progression of computation on these datasets. 
 
-Constrasting this to the DAG in PyTorch ![TensorBoardVisuals](screenshots/TensorBoardVisualizingDAG-pytorch.png), we see a similar structure representing layers of the Neural Network model
+### Constrasting this to the DAG in PyTorch 
+![TensorBoardVisuals](screenshots/TensorBoardVisualizingDAG-pytorch.png), we see a similar structure representing layers of the Neural Network model
 
-Steps to execute the PySpark and PyTorch jobs in order to visualize and explore the WebUI interactively:
+## Steps to execute the PySpark and PyTorch jobs in order to visualize and explore the WebUI interactively:
 1. python -m pip venv .venv
 2. pip install -r requirements.txt
 3. In Terminal 1 python pyspark_employee_data_processing.py. This code has sleep added to enable users to explore the interactive Spark UI. The UI will be active at http://localhost:4040/jobs/
