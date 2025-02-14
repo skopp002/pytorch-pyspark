@@ -5,7 +5,7 @@ You can skip them if you would like to understand the concepts and would like to
 
 Understanding the Visuals:
 
-Spark UI [Spark DAG Visualization](screenshots/pyspark_dag_with_join.png) reveals the execution plan. The nodes in the DAG represent intermediate computation steps. 
+Spark UI ![Spark DAG Visualization](screenshots/pyspark_dag_with_join.png) reveals the execution plan. The nodes in the DAG represent intermediate computation steps. 
 For instance, in this diagram, we have WholeStageCodegen(1) which represents RDD built out of dataset 1 (employee_data) and WholeStageCodegen(1) represents RDD built with 
 the 2nd dataset (demographic_data). Each stage in spark shows the progression of computation on these datasets. 
 
