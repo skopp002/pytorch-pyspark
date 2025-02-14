@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import time as time
 
+
 def analyze_employee_data(df):
     """
     Perform multiple transformations on employee data

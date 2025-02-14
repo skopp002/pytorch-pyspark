@@ -163,6 +163,7 @@ sample_employee = {
     'tenure': 5
 }
 
+
 # Preprocess sample
 sample_df = pd.DataFrame([sample_employee])
 processed_sample = preprocessor.transform(sample_df)
